@@ -1,0 +1,131 @@
+.deteContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 64px);
+}
+
+.deteContainer .echarts-for-react {
+    width: 800px;
+    height: 480px
+}
+
+.deteContainer .mainBox {
+    padding: .125rem .125rem 0;
+    display: flex
+}
+
+.deteContainer .mainBox .column {
+    flex: 3
+}
+
+.deteContainer .mainBox .column:nth-child(2) {
+    flex: 5;
+    margin: 0 .125rem .1875rem;
+    overflow: hidden
+}
+
+.deteContainer .mainBox .panel {
+    position: relative;
+    background: url("../../assets/image/line.png") rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    height: 300px;
+    padding: 0 .1875rem .5rem;
+    margin-bottom: .1875rem;
+    display: flex;
+    flex-direction: column
+}
+
+.deteContainer .mainBox .panel::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: " "
+}
+
+.deteContainer .mainBox .panel::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: " "
+}
+
+.deteContainer .mainBox .panel .chartTitle{
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    margin: 15px auto 10px;
+}
+
+.deteContainer .mainBox .panel .chart {
+    height: 3rem
+}
+
+.deteContainer .videoBox{
+    width: 600px;
+    margin: 20px 0;
+}
+
+.deteContainer .videoBox .title{
+    margin: 5px auto;
+    color: white;
+    font-size: 1.5em;
+}
+
+.deteContainer .videoBox video{
+    width: 600px;
+    height: 300px;
+}
+
+.deteContainer .videoBox .panel {
+    position: relative;
+    background: url("../../assets/image/line.png") rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    padding: 0 .1875rem .5rem;
+}
+
+.deteContainer .videoBox .panel::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: " "
+}
+
+.deteContainer .videoBox .panel::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: " "
+}
+
+.deteContainer .videoBox .panel .chartTitle {
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    margin: 15px auto 10px;
+}
+
+.deteContainer .videoBox .panel .chart {
+    height: 3rem
+}

@@ -1,0 +1,44 @@
+#components-layout-demo-fixed .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("../../assets/font/AaJiJiaHei-2.ttf");
+}
+
+@font-face {
+    font-family: "myFont2";
+    src: url("../../assets/font/No.264-ShangShouSaiBoTi-2.ttf");
+}
+
+.active {
+    position: absolute;
+    width: 100%;
+    /* overflow: hidden; */
+    transition: all 2s ease-in-out;
+    /* background: 100% 100% url("../../assets/image/bg.jpg") no-repeat !important; */
+    background: url("../../assets/image/bg.jpg") !important;
+    /* 背景图垂直、水平均居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+}
+
+.active Header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.site-layout .site-layout-background {
+    min-height: calc(100vh);
+    width: 100%;
+    padding: 64px 50px 0;
+}

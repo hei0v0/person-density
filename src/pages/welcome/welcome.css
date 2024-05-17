@@ -1,0 +1,227 @@
+.welcomeContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 64px);
+}
+
+.welcomeContainer .density {
+    width: 630px;
+    transition: all .5s
+}
+
+.welcomeContainer .density .title {
+    margin: 10px;
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.welcomeContainer .density .video {
+    width: 630px
+}
+
+.welcomeContainer .density .bottomColorArea {
+    margin-top: 10px;
+    width: 630px;
+    text-align: center;
+    font-family: '宋体';
+    color: white;
+}
+
+.welcomeContainer .density-active {
+    transition: all 1.5s ease;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.welcomeContainer .echarts-for-react {
+    width: 800px;
+    height: 480px
+}
+
+.welcomeContainer .mainBox {
+    padding: .125rem .125rem 0;
+    display: flex
+}
+
+.welcomeContainer .mainBox .column {
+    flex: 3
+}
+
+.welcomeContainer .mainBox .column:nth-child(2) {
+    flex: 5;
+    margin: 0 .125rem .1875rem;
+    overflow: hidden
+}
+
+.welcomeContainer .mainBox .panel {
+    position: relative;
+    background: url("../../assets/image/line.png") rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    height: 300px;
+    padding: 0 .1875rem .5rem;
+    margin-bottom: .1875rem;
+    display: flex;
+    flex-direction: column
+}
+
+.welcomeContainer .mainBox .panel::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: " "
+}
+
+.welcomeContainer .mainBox .panel::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: " "
+}
+
+.welcomeContainer .mainBox .panel .panel-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%
+}
+
+.welcomeContainer .mainBox .panel .panel-footer::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: " "
+}
+
+.welcomeContainer .mainBox .panel .panel-footer::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: " "
+}
+
+.welcomeContainer .mainBox .panel h2 {
+    height: .6rem;
+    line-height: .6rem;
+    color: #fff;
+    font-size: .25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: .3125rem
+}
+
+.welcomeContainer .mainBox .panel .chart {
+    height: 3rem
+}
+
+.welcomeContainer .mainBox .mid-number {
+    background-color: rgba(101, 132, 226, 0.1);
+    padding: .1875rem
+}
+
+.welcomeContainer .mainBox .mid-number .hd {
+    border: 1px solid rgba(25, 186, 139, 0.17)
+}
+
+.welcomeContainer .mainBox .mid-number .hd ul {
+    display: flex;
+    position: relative
+}
+
+.welcomeContainer .mainBox .mid-number .hd ul li {
+    position: relative;
+    flex: 1;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .875rem;
+    color: #ffeb7b;
+    text-align: center;
+    font-family: "electronicFont"
+}
+
+.welcomeContainer .mainBox .mid-number .hd ul li::after {
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    top: 25%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.2);
+    content: ""
+}
+
+.welcomeContainer .mainBox .mid-number .hd ul::before {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: " "
+}
+
+.welcomeContainer .mainBox .mid-number .hd ul::after {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: " "
+}
+
+.welcomeContainer .mainBox .mid-number .bd ul {
+    display: flex
+}
+
+.welcomeContainer .mainBox .mid-number .bd ul li {
+    flex: 1;
+    text-align: center;
+    font-size: .225rem;
+    height: .5rem;
+    line-height: .5rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: .125rem
+}
+
+@media screen and (max-width:1024px) {
+    .welcomeContainer .mainBox html {
+        font-size: 42px !important
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .welcomeContainer .mainBox html {
+        font-size: 80px !important
+    }
+}
+
+.welcomeContainer .echarts-for-react{
+    margin: 50px 0;
+}
